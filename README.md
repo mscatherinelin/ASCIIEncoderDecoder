@@ -50,5 +50,9 @@ This can be interpreted as a sequence of five as, four bs, and four cs.
 
 This algorithm is simple to implement and does not incur large CPU overhead. It is an ideal algorithm for files that contain a lot of repetitive data (which is the case for certain ASCII art). In the example file provided there were 5496 characters before compression. After using the run length encoding algorithm, the file was compressed to 3458 characters, which indicates a 37.1% improvement. In the best case RLE can reduce the original data to two values. However, it must be noted that there are certain flaws with this algorithm. The most important flaw would be if the file does not contain any repeated characters. This would result in double the space usage. Another advantage of this algorithm is that it is a lossless compression technique. 
 
+### Modifications
+
+One of the drawbacks of RLE is if there is only a single byte to encode, you have to add an extra byte for the length byte. Although we can encode 256 repetitons of a single byte, this does not occur often in practice. Individual bytes in ASCII can be encoded in 7 bits. The 8th bit of all bytes in a text file is 0. Thus we can use the last bit as a flag to indicate whther a byte should be repeated or not. If the bit is set to 1 then the decoder will write the number of byte repetitions. 
+
 
 
