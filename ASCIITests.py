@@ -117,7 +117,5 @@ class EncodeDecodeASCIIArt(unittest.TestCase):
             self.assertFalse(object.alreadyEncoded)
 
 
-
-
 if __name__ == '__main__':
     unittest.main()

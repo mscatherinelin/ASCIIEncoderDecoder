@@ -96,19 +96,6 @@ class ASCIIFormatTransporter:
 
 
 
-# if __name__ == '__main__':
-#     # result = ASCIIFormatTransporter("aaaabbbb", False).encode_transform()
-#     # result = ASCIIFormatTransporter("4  41 1\n 4b 42", False).decode_transform()
-#     result = ASCIIFormatTransporter("data.txt", False)
-#     result.encode()
-#     print(result.data)
-#     result.decode()
-#     print(result.data)
-#
-
-
-
-
 
 
 
