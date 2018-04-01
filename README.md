@@ -4,22 +4,23 @@ A program that implements lossless encoding and decoding of files containing ASC
 
 ## Instructions
 
-Below are the steps that describe how the ASCII Transport Format is to be used.
+Below are the steps that describe how the ASCII Transport Format is to be used:
 
 Import the file:
 
-`from from ASCIIEncoderDecoder import ASCIIFormatTransporter`
+  `from from ASCIIEncoderDecoder import ASCIIFormatTransporter`
 
 Build the object that will contain the data from the ASCII art file:
-`object = object = ASCIIFormatTransporter(file_name)`
+
+  `object = object = ASCIIFormatTransporter(file_name)`
 
 Encode the object:
 
-`object.encode()`
+  `object.encode()`
 
 Decode the object:
 
-`object.decode()`
+  `object.decode()`
 
 ## Unit Testing
 
