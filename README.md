@@ -24,7 +24,7 @@ Decode the object:
 
   `object.decode()`
   
-  This function decodes the ASCII file data. It has O(n_ space and time complexity.
+  This function decodes the ASCII file data. It has O(n) space and time complexity.
 
 ## Unit Testing
 
