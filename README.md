@@ -12,7 +12,7 @@ Import the file:
 
 Build the object that will contain the data from the ASCII art file:
 
-  `object = object = ASCIIFormatTransporter(file_name)`
+  `object = ASCIIFormatTransporter(file_name)`
 
 Encode the object:
 
