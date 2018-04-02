@@ -28,7 +28,7 @@ Decode the object:
 
 ## Unit Testing
 
-The test suit illustrates the basic behavior of the `encode` and `decode` functionality. The tests account for empty files as well as files that are comprised of various characters. The tests also check for users who attempt to encode/decode already encoded/decoded data.
+The test suit illustrates the basic behavior of the `encode` and `decode` functionality. The tests account for empty files as well as files that are comprised of various characters. The tests also check for users who attempt to encode/decode already encoded/decoded data as well as error in file input.
 
 In order to test the robustness of the program use the following command:
 
