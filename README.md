@@ -28,7 +28,7 @@ Decode the object:
 
 ## Unit Testing
 
-The test suit illustrates the basic behavior of the `encode` and `decode` functionality. The tests include empty files as well as files that are comprised of various characters. The tests also check for users who attempt to encode/decode already encoded/decoded data.
+The test suit illustrates the basic behavior of the `encode` and `decode` functionality. The tests account for empty files as well as files that are comprised of various characters. The tests also check for users who attempt to encode/decode already encoded/decoded data.
 
 In order to test the robustness of the program use the following command:
 
@@ -52,7 +52,8 @@ This algorithm is simple to implement and does not incur large CPU overhead. It 
 
 ### Modifications
 
-One of the drawbacks of RLE is if there is only a single byte to encode, you have to add an extra byte for the length byte. Although we can encode 256 repetitons of a single byte, this does not occur often in practice. Individual bytes in ASCII can be encoded in 7 bits. The 8th bit of all bytes in a text file is 0. Thus we can use the last bit as a flag to indicate whther a byte should be repeated or not. If the bit is set to 1 then the decoder will write the number of byte repetitions. 
+We can utilize the fact that in ASCII art there are usually a subset of characters that are used. Thus we can map the observed characters to values that can be stored in a fewer number of bits, taking up less memory overall.
+
 
 
 
