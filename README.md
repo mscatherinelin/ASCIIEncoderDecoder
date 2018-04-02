@@ -8,7 +8,7 @@ Below are the steps that describe how the ASCII Transport Format is to be used:
 
 Import the file:
 
-  `from from ASCIIEncoderDecoder import ASCIIFormatTransporter`
+  `from ASCIIEncoderDecoder import ASCIIFormatTransporter`
 
 Build the object that will contain the data from the ASCII art file:
 
